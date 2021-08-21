@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://database:5432/musketeer_dev
+    username: postgres
+    password: postgres
+
+example:
+  property: I AM DEV
