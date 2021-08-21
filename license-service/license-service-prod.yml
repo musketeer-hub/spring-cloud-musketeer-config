@@ -1,8 +1,7 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://database:5432/musketeer_prod
-    username: postgres
+example: 
+  property: "I AM PROD"
+spring: 
+  datasource: 
     password: postgres
-
-example:
-  property: I AM PROD
+    url: "jdbc:postgresql://database:5432/musketeer_prod"
+    username: postgres
