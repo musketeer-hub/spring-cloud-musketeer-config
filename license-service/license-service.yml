@@ -1,20 +1,23 @@
-example: 
+example:
   property: "I AM THE DEFAULT"
-management: 
-  endpoints: 
+management:
+  endpoints:
     enabled-by-default: true
-    web: 
-      exposure: 
+    web:
+      exposure:
         include: "*"
-spring: 
-  database: 
-    driverClassName: org.postgresql.Driver
-  jpa: 
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  jpa:
     database: POSTGRESQL
-    hibernate: 
+    hibernate:
       ddl-auto: none
-      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-    properties: 
-      hibernate: 
+    properties:
+      hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
+  cloud:
+    config:
+      override-none: true
+      override-system-properties: false
