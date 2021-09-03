@@ -4,6 +4,7 @@ keycloak:
   ssl-required: external
   resource: musketeer
   credentials:
-    secret: TBD
+    secret: 7f2c6f95-f37d-4474-bfc1-016ecc6cbf16
+  principal-attribute: preferred_username
   use-resource-role-mappings: true
   bearer-only: true
