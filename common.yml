@@ -1,1 +1,9 @@
-
+keycloak:
+  realm: musketeer-realm
+  auth-server-url: ${KEYCLOAK_URL:http://localhost:8080/auth}
+  ssl-required: external
+  resource: musketeer
+  credentials:
+    secret: TBD
+  use-resource-role-mappings: true
+  bearer-only: true
