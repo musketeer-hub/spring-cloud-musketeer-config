@@ -8,10 +8,3 @@ keycloak:
   principal-attribute: preferred_username
   use-resource-role-mappings: true
   bearer-only: true
-  
-spring:
-  cloud:
-    config:
-      allow-override: true
-      override-none: true
-      override-system-properties: false
