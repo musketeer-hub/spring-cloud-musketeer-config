@@ -2,10 +2,9 @@ example:
   property: "I AM THE DEFAULT"
 management:
   endpoints:
-    enabled-by-default: true
     web:
       exposure:
-        include: "*"
+        include: health, refresh, beans, env
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -17,7 +16,3 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     show-sql: true
-  cloud:
-    config:
-      override-none: true
-      override-system-properties: false
