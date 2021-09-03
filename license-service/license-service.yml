@@ -19,5 +19,6 @@ spring:
     show-sql: true
   cloud:
     config:
+      allowOverride: true
       override-none: true
       override-system-properties: false
